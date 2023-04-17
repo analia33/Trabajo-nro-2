@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de programación</title>
+</head>
+<body>
+    <h1> Formulario </h1>
+    <form action="envio.php" method="post" target="_blank">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" size="tamaño" 
+        name= "nombre" placeholder="Nombre de usuario">
+        <br>
+        <label for="Contraseña">Contraseña:</label>
+        <input type="password" id="password" size="tamaño"
+        name="contraseña" placeholder="Escribe tu contraseña">
+        <br>
+        <label for="programacion">¿Tenés conocimientos en programación?</label>
+        <br>
+        <input type="radio" name="programacion" value="si"> Si
+        <input type="radio" name="programacion" value="no"> No 
+        <input type="radio" name="programacion" value="un poco"> Un poco
+        <br>
+        <label for="Edad">Edad: </label>
+        <input type="number" id="usuario" size="tamaño">
+        <br>
+       <label for="Fecha">Fecha de nacimiento</label>
+<input type="date" id="Fecha" name="Fecha" max="1980-12-30">
+<br>
+        <label for="estudios">Agregue sus estudios:</label>
+        <textarea type="file" id="study" size="tamaño" name="Agregue sus estudios" placeholder="Escriba aquí" rows="5" cols="30"></textarea> 
+            <br>
+        <label for="País">País de origen:</label>
+        <select name="País" id="país">
+        <optgroup label="América">
+        <option value="Argentina" selected="selected">Argentina</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="Chile">Chile</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Paraguay">Paraguay</option>
+        </optgroup>
+</select>
+<br>
+<input type="button" onclick="alert(Inscribirse)" value="Inscribirse">
+<br>
+<input type="submit" value="enviar datos">
+<input type="reset" value="Borrar datos">
+
+    </form>
+</body>
+</html>
